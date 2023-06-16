@@ -1,12 +1,12 @@
 pkgbase = nvidia-utils-beta
 	pkgdesc = NVIDIA drivers utilities (beta version)
-	pkgver = 535.43.02
+	pkgver = 535.54.03
 	pkgrel = 1
 	url = https://www.nvidia.com/
 	arch = x86_64
 	license = custom
 	options = !strip
-	source = https://us.download.nvidia.com/XFree86/Linux-x86_64/535.43.02/NVIDIA-Linux-x86_64-535.43.02.run
+	source = https://us.download.nvidia.com/XFree86/Linux-x86_64/535.54.03/NVIDIA-Linux-x86_64-535.54.03.run
 	source = nvidia-drm-outputclass.conf
 	source = nvidia-utils.sysusers
 	source = nvidia.rules
@@ -25,11 +25,11 @@ pkgname = nvidia-utils-beta
 	optdepends = nvidia-settings-beta: for the configuration tool
 	optdepends = xorg-server-devel: for nvidia-xconfig
 	optdepends = opencl-nvidia-beta: for OpenCL support
-	provides = nvidia-utils=535.43.02
+	provides = nvidia-utils=535.54.03
 	provides = vulkan-driver
 	provides = opengl-driver
-	provides = nvidia-libgl=535.43.02
-	provides = nvidia-libgl-beta=535.43.02
+	provides = nvidia-libgl=535.54.03
+	provides = nvidia-libgl-beta=535.54.03
 	conflicts = nvidia-utils
 	conflicts = nvidia-libgl
 	replaces = nvidia-libgl
@@ -37,16 +37,16 @@ pkgname = nvidia-utils-beta
 pkgname = opencl-nvidia-beta
 	pkgdesc = OpenCL implemention for NVIDIA (beta version)
 	depends = zlib
-	depends = nvidia-utils-beta>=535.43.02
+	depends = nvidia-utils-beta>=535.54.03
 	optdepends = opencl-headers: headers necessary for OpenCL development
-	provides = opencl-nvidia=535.43.02
+	provides = opencl-nvidia=535.54.03
 	provides = opencl-driver
 	conflicts = opencl-nvidia
 
 pkgname = nvidia-settings-beta
 	pkgdesc = Tool for configuring the NVIDIA graphics driver (beta version)
-	depends = nvidia-utils-beta>=535.43.02
+	depends = nvidia-utils-beta>=535.54.03
 	depends = gtk3
-	provides = nvidia-settings=535.43.02
-	provides = nvidia-settings-beta=535.43.02
+	provides = nvidia-settings=535.54.03
+	provides = nvidia-settings-beta=535.54.03
 	conflicts = nvidia-settings
